@@ -41,6 +41,7 @@ class Mapa:
             remover_y = int(input("Ingrese la coordenada y "))
             
             if self.mapa[remover_x][remover_y] == 1:
+                self.mapa[remover_x][remover_y] =0
                 self.obstaculos.remove((remover_x, remover_y))
                 print(f"Obstáculo en ({remover_x}, {remover_y}) eliminado.")
                 break
